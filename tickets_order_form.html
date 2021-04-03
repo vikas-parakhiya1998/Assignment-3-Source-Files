@@ -1,0 +1,207 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Event Tickets Order Form</title>
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">		
+	</head>
+
+	<body>
+		<div id="frame">
+			<header>
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;">
+				<div id="header-line-1">New Year Central</div>
+				<div id="header-line-2">For the child in all of us!</div>
+			</header>
+
+			<!-- navigation starts -->
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<aside>
+				<div class="sidebar-title">Products of The Week...</div>
+				<ul>
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
+				</ul>
+			</aside>
+			
+			<main>
+				<h1>Order Event Tickets</h1>
+				<!-- The form starts here... -->
+
+
+				<form method="post" action="./place_order.html">
+
+
+				<fieldset class="fieldset">
+  					<legend class="legend">Member Information</legend>
+
+  					<div class="row1">
+					  <div class="column1">
+					    <label for="email" class="at1">E-Mail:</label>
+					    <label for="fname" class="at1">First Name:</label>
+					    <label for="lname" class="at1">Last Name:</label>
+					    <label for="address" class="at1">Address:</label>
+					    <label for="city" class="at1">City:</label>
+					    <label for="province" class="at1">Province:</label>
+					    <label for="pcode" class="at1">Postal Code:</label>
+					    <label for="pnumber" class="at1">Phone:</label>
+
+					  </div>
+
+					  <div class="column1 ">
+					    <input id="input " type="text" id="email" name="email" autofocus>
+					    <input id="input" type="text" id="fname" name="fname">
+					    <input id="input" type="text" id="lname" name="lname">
+					    <input id="input" type="text" id="address" name="address">
+					    <input id="input" type="text" id="city" name="city">
+					    <input id="input" type="text" id="province" name="province" placeholder="2-character code">
+					    <input id="input" type="text" id="pcode" name="pcode" placeholder="6 characters" min="1" max="6" pattern="[a-zA-Z0-9]">
+					    <input id="input" type="text" id="pnumber" name="pnumber" placeholder="999-999-999" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}">
+
+					  </div>
+					</div>
+				</fieldset>
+
+
+
+				<fieldset class="fieldset">
+  				<legend class="legend" >Ordering Information</legend>
+  					<div class="row1">
+					  <div class="column2">
+					    <label for="event" class="at1">Event:</label>
+					    <label for="order" class="at1">Order Type:</label>
+					    <label for="tickets" class="at1">Number of Ticket:</label>					    
+					  </div>
+
+					  <div class="column2">
+					  	<select id="input" name="event">
+						    <option value="a1">Cookie Decoration Contest</option>
+						    <option value="a2">Tree Decoration Contest</option>
+						    <option value="a3">Gift of Light Ride-Along</option>
+						    <option value="a4">Breakfast with Santa</option>
+						 </select>
+
+
+
+						 <select id="input" name="cars">
+						    <option value="b1">Member Package</option>
+						    <option value="b2">Donor Package</option>
+						    <option value="b3">Single Tickets</option>
+						 </select>
+
+					    <input id="input" type="number" id="address" name="address" placeholder="Number of single tickets">
+
+					   </div>
+					</div>
+
+
+
+				</fieldset>
+
+
+
+				<fieldset class="fieldset">
+  				<legend class="legend">Payment Method</legend>
+
+  				<div class="row">
+  					<div class="column">
+  						<input type="radio" id="male" name="gender" value="male">
+						<label for="male">Bill Me</label>
+  					</div>
+
+  					<div class="column">
+  						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Credit Card</label><br>
+  					</div>
+  				</div>
+
+
+				</fieldset>
+
+				<fieldset class="fieldset">
+  				<legend class="legend">Credit Card Information</legend>
+
+  				<div class="row1">
+					  <div class="column3">
+					    <label for="event" class="at1">Card Type:</label>
+					    <label for="order" class="at1">Card Number:</label>
+					    <label for="tickets" class="at1">Expiration Date:</label>					    
+					  </div>
+
+					  <div class="column3">
+					  	<select id="input" name="event">
+						    <option value="a1">Visa</option>
+						    <option value="a2">Master Card</option>
+						    <option value="a3">Discover</option>
+						 </select>
+
+						 <input id="input" type="text" id="address" name="address" placeholder="16 digit number">
+
+
+
+						 <select id="input" name="month">
+						    <option value="m1">January</option>
+						    <option value="m2">February</option>
+						    <option value="m3">March</option>
+						    <option value="m4">April</option>
+						    <option value="m5">May</option>
+						    <option value="m6">June</option>
+						    <option value="m7">July</option>
+						    <option value="m8">August</option>
+						    <option value="m9">September</option>
+						    <option value="m10">October</option>
+						    <option value="m11">November</option>
+						    <option value="m12">December</option>
+						 </select>
+
+					    <select id="input" name="event">
+						    <option value="a1">2021</option>
+						    <option value="a2">2022</option>
+						    <option value="a3">2023</option>
+						    <option value="a4">2024</option>
+						    <option value="a4">2025</option>
+						    <option value="a4">2026</option>
+						    <option value="a4">2027</option>
+
+
+						 </select>
+
+					   </div>
+					</div>
+
+				</fieldset>
+
+				<fieldset class="fieldset">
+  				<legend class="legend">Submit Your Order</legend>
+
+  				<div class="btn-group">
+				  <button type="submit" value="submit" style=" margin-left: 190px">Submit</button> 
+				  <button>Reset Fields</button>
+				  
+				</div>
+
+				</fieldset>
+					 
+
+
+				</form>
+				
+			</main>
+			
+			<footer>
+				<p>&copy; 2021 New Year Central. Created by Johnny White.</p>
+			</footer>
+		</div>
+	</body>
+</html>
